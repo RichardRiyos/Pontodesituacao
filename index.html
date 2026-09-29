@@ -1,0 +1,125 @@
+<style>
+.cc{--est:#D9E2F3;--doc:#A9D08E;--bd:#8a94a6;--tx:#1f2937;width:100%;aspect-ratio:16/9;container-type:inline-size;display:flex;flex-direction:column;overflow:hidden;background:#fff;color:var(--tx);border:1px solid var(--bd);border-radius:8px;font-family:inherit;line-height:1.35}
+.cc *{box-sizing:border-box}
+.cc>input{position:absolute;opacity:0;pointer-events:none}
+.cc-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:.5em 2em;padding:1.2cqw 2cqw 0;border-bottom:2px solid var(--bd);font-size:clamp(9.5px,1.1cqw,16px)}
+.cc-h{margin:0 0 .6em;font-size:1.55em;line-height:1.2;color:var(--tx)}
+.cc-tabs{display:flex;gap:.3em}
+.cc-tabs label{cursor:pointer;padding:.45em 1.2em;border:1px solid var(--bd);border-bottom:0;border-radius:6px 6px 0 0;background:#f3f4f6;color:var(--tx);font-weight:600;margin-bottom:-2px}
+.cc-tabs label:hover{background:#e5e7eb}
+#cc-t1:checked~.cc-top label[for=cc-t1],#cc-t2:checked~.cc-top label[for=cc-t2],#cc-t3:checked~.cc-top label[for=cc-t3]{background:var(--est);box-shadow:inset 0 3px 0 #4472C4}
+#cc-t1:focus-visible~.cc-top label[for=cc-t1],#cc-t2:focus-visible~.cc-top label[for=cc-t2],#cc-t3:focus-visible~.cc-top label[for=cc-t3]{outline:3px solid #1d4ed8;outline-offset:2px}
+.cc-p{display:none;flex:1;min-height:0;overflow:auto;padding:1.2cqw 2cqw;font-size:clamp(9.5px,1.05cqw,15px)}
+#cc-t1:checked~.cc-p1,#cc-t2:checked~.cc-p2,#cc-t3:checked~.cc-p3{display:block}
+.cc-in{min-width:720px}
+.cc-info{display:flex;flex-wrap:wrap;gap:.2em 2em;margin-bottom:.8em}
+.cc-l{font-weight:600}
+.cc-blank{display:inline-block;min-width:12em;border-bottom:1px solid var(--tx)}
+.cc table{border-collapse:collapse;width:100%;background:#fff;color:var(--tx)}
+.cc th,.cc td{border:1px solid var(--bd);padding:.35em .5em;text-align:left;vertical-align:top;color:var(--tx);overflow-wrap:anywhere}
+.cc-t{table-layout:fixed}
+.cc-t td{height:2.2em}
+.cc .cc-est{background:var(--est)}
+.cc .cc-doc{background:var(--doc)}
+.cc-sum{font-weight:700}
+.cc-bot{display:grid;grid-template-columns:1.1fr 1fr;gap:1.6em;margin-top:.9em;align-items:start}
+.cc-tot th{width:31%}
+.cc-notas{font-size:.92em}
+.cc-notas p{margin:0 0 .25em}
+.cc-nt{font-weight:600}
+.cc-leg span{display:inline-block;padding:.1em .6em;margin-right:.5em}
+@media print{.cc{aspect-ratio:auto;overflow:visible}.cc-top .cc-tabs{display:none}.cc-p{display:block!important;overflow:visible}}
+</style>
+<div class="cc">
+<input type="radio" name="cc-ano" id="cc-t1" checked aria-label="1º ano">
+<input type="radio" name="cc-ano" id="cc-t2" aria-label="2º ano">
+<input type="radio" name="cc-ano" id="cc-t3" aria-label="3º ano">
+<div class="cc-top"><h3 class="cc-h">Mapa resumo de Atividades da Carteira de Competências</h3><div class="cc-tabs"><label for="cc-t1">1º ano</label><label for="cc-t2">2º ano</label><label for="cc-t3">3º ano</label></div></div>
+<section class="cc-p cc-p1" aria-label="1º ano"><div class="cc-in">
+<div class="cc-info"><div><span class="cc-l">Nome do/da estudante:</span> Ricardo José Amaro Mestre</div><div><span class="cc-l">Nº</span> 2025177249</div><div><span class="cc-l">Curso:</span> CS</div><div><span class="cc-l">Ano lectivo de ingresso:</span> 2025.26</div></div>
+<table class="cc-t"><colgroup><col style="width:17%"><col style="width:6%"><col style="width:9%"><col style="width:7%"><col style="width:8%"><col style="width:20%"><col style="width:9%"><col style="width:6%"><col style="width:7%"><col style="width:6%"><col style="width:5%"></colgroup><thead><tr>
+<th scope="col" class="cc-est">Nome e tipo de Atividade</th>
+<th scope="col" class="cc-est">Ano Letivo correspondente</th>
+<th scope="col" class="cc-est">Data de realização da atividade</th>
+<th scope="col" class="cc-est">Tempo despendido com a atividade<sup>[1]</sup></th>
+<th scope="col" class="cc-est">Área em que se desenvolveu a atividade<sup>[2]</sup></th>
+<th scope="col" class="cc-est">Discriminação das funções e tarefas desenvolvidas</th>
+<th scope="col" class="cc-est">Atividade de âmbito profissional enquanto trabalhador-estudantes (S ou N)</th>
+<th scope="col" class="cc-est">C/ ou S/ comprovativo</th>
+<th scope="col" class="cc-doc">Créditos atribuídos</th>
+<th scope="col" class="cc-doc">Avaliação</th>
+<th scope="col" class="cc-doc">OBS.</th>
+</tr></thead><tbody>
+<tr><td>Formação da NAU sobre algoritmos e complexidade</td><td>2025/2026</td><td>07/11/2025-13/11/2025</td><td>25 horas</td><td>Científica</td><td>Perceber o tipo de algoritmos existentes e a forma como podem ser usados no mundo da informática, de forma coerente e coesa.</td><td>N</td><td>C</td><td>0,9</td><td></td><td></td></tr>
+<tr><td>Formação da NAU sobre o combate à desinformação e notícias falsas</td><td>2025/2026</td><td>06/12/2025</td><td>3 horas</td><td>Comunicação</td><td>Desenvolvimento de interpretação e identificação de noticias falsas</td><td>N</td><td>C</td><td>0,11</td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="cc-sum">1,01</td><td></td><td></td></tr>
+</tbody></table><div class="cc-bot"><table class="cc-tot"><tbody>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 1º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 1º ano:</th><td></td></tr>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 2º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 2º ano:</th><td></td></tr>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 3º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 3º ano:</th><td></td></tr>
+</tbody></table><div class="cc-notas"><p class="cc-nt">Instrução de preenchimento:</p>
+<p>[1] Nesta coluna deve ser indicado o tempo despendido, assinalando todas as etapas: preparação, actividade, pesquisa, relatório e o total de horas.</p>
+<p>[2] Nesta coluna deve ser indicado o tipo de actividade: de natureza técnica/científica/profissional/artística e/ou social/cidadania.</p>
+<p>Sempre que se entregar nova versão este documento as alterações devem ser assinaladas a vermelho.</p>
+<p>Apenas atividades que não tenham sido objeto de avaliação noutra unidade curricular</p>
+<p class="cc-leg"><span class="cc-doc">A verde a preencher pelo docente</span><span class="cc-est">A azul a preencher pelo estudante</span></p></div></div></div></section>
+<section class="cc-p cc-p2" aria-label="2º ano"><div class="cc-in">
+<div class="cc-info"><div><span class="cc-l">Nome do/da estudante:</span> <span class="cc-blank"></span></div><div><span class="cc-l">Nº</span> <span class="cc-blank"></span></div><div><span class="cc-l">Curso:</span> CS</div><div><span class="cc-l">Ano lectivo de ingresso:</span> 2019.20</div></div>
+<table class="cc-t"><colgroup><col style="width:17%"><col style="width:6%"><col style="width:9%"><col style="width:7%"><col style="width:8%"><col style="width:20%"><col style="width:9%"><col style="width:6%"><col style="width:7%"><col style="width:6%"><col style="width:5%"></colgroup><thead><tr>
+<th scope="col" class="cc-est">Nome e tipo de Atividade</th>
+<th scope="col" class="cc-est">Ano Letivo correspondente</th>
+<th scope="col" class="cc-est">Data de realização da atividade</th>
+<th scope="col" class="cc-est">Tempo despendido com a atividade<sup>[1]</sup></th>
+<th scope="col" class="cc-est">Área em que se desenvolveu a atividade<sup>[2]</sup></th>
+<th scope="col" class="cc-est">Discriminação das funções e tarefas desenvolvidas</th>
+<th scope="col" class="cc-est">Atividade de âmbito profissional enquanto trabalhador-estudantes (S ou N)</th>
+<th scope="col" class="cc-est">C/ ou S/ comprovativo</th>
+<th scope="col" class="cc-doc">Créditos atribuídos</th>
+<th scope="col" class="cc-doc">Avaliação</th>
+<th scope="col" class="cc-doc">OBS.</th>
+</tr></thead><tbody>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody></table><div class="cc-bot"><table class="cc-tot"><tbody>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 1º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 1º ano:</th><td></td></tr>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 2º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 2º ano:</th><td></td></tr>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 3º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 3º ano:</th><td></td></tr>
+</tbody></table><div class="cc-notas"><p class="cc-nt">Instrução de preenchimento:</p>
+<p>[1] Nesta coluna deve ser indicado o tempo despendido, assinalando todas as etapas: preparação, actividade, pesquisa, relatório e o total de horas.</p>
+<p>[2] Nesta coluna deve ser indicado o tipo de actividade: de natureza técnica/científica/profissional/artística e/ou social/cidadania.</p>
+<p>Sempre que se entregar nova versão este documento as alterações devem ser assinaladas a vermelho.</p>
+<p>Apenas atividades que não tenham sido objeto de avaliação noutra unidade curricular</p>
+<p class="cc-leg"><span class="cc-doc">A verde a preencher pelo docente</span><span class="cc-est">A azul a preencher pelo estudante</span></p></div></div></div></section>
+<section class="cc-p cc-p3" aria-label="3º ano"><div class="cc-in">
+<div class="cc-info"><div><span class="cc-l">Nome do/da estudante:</span> <span class="cc-blank"></span></div><div><span class="cc-l">Nº</span> <span class="cc-blank"></span></div><div><span class="cc-l">Curso:</span> CS</div><div><span class="cc-l">Ano lectivo de ingresso:</span> 2019.20</div></div>
+<table class="cc-t"><colgroup><col style="width:17%"><col style="width:6%"><col style="width:9%"><col style="width:7%"><col style="width:8%"><col style="width:20%"><col style="width:9%"><col style="width:6%"><col style="width:7%"><col style="width:6%"><col style="width:5%"></colgroup><thead><tr>
+<th scope="col" class="cc-est">Nome e tipo de Atividade</th>
+<th scope="col" class="cc-est">Ano Letivo correspondente</th>
+<th scope="col" class="cc-est">Data de realização da atividade</th>
+<th scope="col" class="cc-est">Tempo despendido com a atividade<sup>[1]</sup></th>
+<th scope="col" class="cc-est">Área em que se desenvolveu a atividade<sup>[2]</sup></th>
+<th scope="col" class="cc-est">Discriminação das funções e tarefas desenvolvidas</th>
+<th scope="col" class="cc-est">Atividade de âmbito profissional enquanto trabalhador-estudantes (S ou N)</th>
+<th scope="col" class="cc-est">C/ ou S/ comprovativo</th>
+<th scope="col" class="cc-doc">Créditos atribuídos</th>
+<th scope="col" class="cc-doc">Avaliação</th>
+<th scope="col" class="cc-doc">OBS.</th>
+</tr></thead><tbody>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody></table><div class="cc-bot"><table class="cc-tot"><tbody>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 1º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 1º ano:</th><td></td></tr>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 2º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 2º ano:</th><td></td></tr>
+<tr><th scope="row" class="cc-doc">Total de Créditos realizados no 3º ano:</th><td></td><th scope="row" class="cc-doc">Classificação obtida no 3º ano:</th><td></td></tr>
+</tbody></table><div class="cc-notas"><p class="cc-nt">Instrução de preenchimento:</p>
+<p>[1] Nesta coluna deve ser indicado o tempo despendido, assinalando todas as etapas: preparação, actividade, pesquisa, relatório e o total de horas.</p>
+<p>[2] Nesta coluna deve ser indicado o tipo de actividade: de natureza técnica/científica/profissional/artística e/ou social/cidadania.</p>
+<p>Sempre que se entregar nova versão este documento as alterações devem ser assinaladas a vermelho.</p>
+<p>Apenas atividades que não tenham sido objeto de avaliação noutra unidade curricular</p>
+<p class="cc-leg"><span class="cc-doc">A verde a preencher pelo docente</span><span class="cc-est">A azul a preencher pelo estudante</span></p></div></div></div></section>
+</div>
